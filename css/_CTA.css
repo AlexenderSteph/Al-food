@@ -1,0 +1,89 @@
+
+.section-cta{
+    padding: 9.6rem 0;
+}
+
+.cta{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    box-shadow: 0 2.4rem 4.8rem rgb(0, 0, 0,0.100);
+    border-radius: 11px;
+    background-image: linear-gradient(to right bottom,#eb984e, #e67e22);
+    overflow: hidden;
+}
+
+.cta-text-box{
+color: #2e1907;
+padding:4.8rem 6.4rem 6.4rem 6.4rem;
+}
+.cta .heading-secondary{
+color: #2e1907;
+margin-bottom: 3.2rem;
+}
+
+.cta-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 4.8rem;
+}
+
+
+.cta-img-box{
+    background-image:linear-gradient(to right bottom,rgb(235, 152, 78, 0.25), rgb(230, 126, 34,0.25)), url(../imgs/charming-brunette-tanned-woman-sunglasses-cap-eats-dessert-cafe.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.cta-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3.2rem;
+    color: #2e1907;
+    row-gap: 2.4rem;
+}
+
+.cta-form label{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: inherit;
+    margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select{
+width: 100%;
+padding: 1.2rem;
+font-size: 1.8rem;
+font-family: inherit;
+border: none;
+color: inherit;
+background-color: #fdf2e9;
+border-radius: 9px;
+box-shadow: 0 1px 2px rgb(0, 0, 0,0.15);
+}
+
+.cta-form input::placeholder{
+    color: #aaa;
+}
+.cta-form input:focus{
+    outline: none;
+}
+
+
+
+.cta-form button{
+    background-color: #2e1907;
+    border: none;
+    border-radius: 11px;
+    padding: 1.4rem;
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 600;
+    align-self: end;
+    transition: all 0.3s;
+}
+
+.cta-form button:hover{
+    background-color: #fff;
+    color: #555;
+}

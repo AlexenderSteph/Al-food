@@ -1,0 +1,152 @@
+/********* REUSABLE CONTENT **********/
+.heading-secondary{
+    font-size: 4.4rem;
+    font-weight: 700;
+    color: #333;
+    letter-spacing: -0.5px;
+    line-height: 1.2;
+    margin-bottom: 7.3rem;
+}
+.heading-tertiary{
+    color: #333;
+    letter-spacing: -0.5px;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 3.2rem;
+}
+
+.subheading{
+    display: block;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #cf711f;
+    text-transform: uppercase;
+    margin-bottom: 1.6rem;
+    letter-spacing: 0.75px;
+}
+.container{
+    /* 1140px */
+    width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid{
+    display: grid;
+    row-gap: 9.6rem;
+    column-gap: 6.4rem;
+    
+}
+.grid:not(:last-child){
+    margin-bottom: 9.6rem;
+
+}
+.grid--center-v{
+    align-items: center;
+}
+
+.grid--2-cols{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols{
+    grid-template-columns: repeat(4, 1fr);
+}
+.grid--5-cols{
+    grid-template-columns: repeat(5, 1fr);
+}
+.grid--footer{
+    grid-template-columns: 2fr 1.5fr 1fr 1fr 1fr;
+}
+
+.margin-bottom-md{
+    margin-bottom: 4.8rem !important;
+}
+.margin-right-sm{
+    margin-bottom: 1.6rem !important;
+}
+strong{
+    font-weight: 600;
+}
+
+.link:link,
+link:visited{
+    display: inline-block;
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom: 1px solid currentColor;
+    padding: 2rem;
+    transition: all 0.3s;
+}
+
+.link:hover,
+link:active{
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
+}
+
+.center-text{
+    text-align: center;
+}
+
+
+/********* REUSABLE CONTENT **********/
+
+.section-how{
+    padding: 3.6rem 0;
+
+}
+.step-number{
+    font-size: 9.8rem;
+    font-weight: 600;
+    color: #ddd;
+    margin-bottom: 1.2rem;
+}
+.step-description{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}
+.step-img-box{
+  position: relative;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.step-img-box::before,
+.step-img-box::after{
+    content: "";
+    display: block;
+    
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    /***** Le Z-index me permet de placer des elements soit au dessus soit en dessous des autres   ****/
+}
+
+
+.step-img-box::before{
+    width: 60%;
+    padding-bottom: 60%;
+    background-color: #ffefef;
+    z-index: -2;
+}
+.step-img-box::after{
+width: 50%;
+padding-bottom: 50%;
+background-color: #fae5d3;
+z-index: -1;
+}
+
+.step-img{
+    width: 35%;
+}

@@ -1,0 +1,62 @@
+root{
+--gradient-secondary: linear-gradient(to top left, #ffb003, #e67e22);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fdf2e9;
+    position: relative;
+
+    /******* Because we want the header to be sticky            *******/
+    height: 9.6rem;
+    padding: 0 4.8rem;
+}
+
+.logo{
+    height: 30rem;
+}
+
+.main-nav-list{
+    list-style: none;
+    display: flex;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link,
+ .main-nav-link:visited{
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.8rem;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active{
+    color: #cf711f;
+}
+
+.nav-cta:link,
+.nav-cta:visited{
+    background-color:#e67e22;
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 0.8rem 2.8rem;
+    border-radius: 9px;
+    color: #fff;
+    transition: all 0.2s;
+}
+.nav-cta:hover,
+.nav-cta:visited{
+    background-color:#cf711f;
+    color: #fff;
+    
+}
+
+.sticky{
+    position: fixed;
+    background-color: var(--gradient-secondary);
+}
